@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <title>BodaGene&Juan</title>
+    
+</head>
+
+<body>
+    <!-- Portada de invitación con efecto parallax -->
+    <div class="parallax image1">
+        <div class="container">
+            <!-- <div><img src="./logos/racimo1.png" class="corner1"></div> -->
+            <div class="title"> Gene & Juan</div>
+            <div class="subTitle">¡NOS CASAMOS!</div>
+            <!-- <div><img src="./logos/racimo2.png" class="corner2"></div> -->
+            <div class="arrowScroll">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- Primera Encabezado con fondo verde gradiente -->
+    <div class="container gradient">
+        <div class="whiteLeters">¡LLEGÓ EL GRAN DÍA!</div>
+    </div>
+    <!--Invitación con imagen de copas y botón para ver la direccion en google maps-->
+    <div class="container2">
+        <div><img src="./logos/copas.jpg" class="glasses"></div>
+        <div class="goldLeters">CELEBRACIÓN</div>
+        <div><img src="./logos/racimo1.png" class="cluster1"></div>
+        <p class="paragraph">
+            ¡Estamos muy emocionados de invitarte a celebrar con nosotros!
+            Acompañanos el día 30 de Octubre 2021 a las 13:00hs a una celebración a plena luz del día a las afueras de
+            la ciudad,
+            así que agarra tus lentes de sol porque ¡Vamos al campo!
+            En el siguiente botón encontrarás la dirección del lugar
+        </p>
+
+        <a href="https://www.google.com.ar/maps/place/Pretoria+Eventos/@-34.61511,-58.9295287,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc8e2c8e5fb8e1:0x95ea9105e4ccfd13!8m2!3d-34.61511!4d-58.92734"
+            target="_blank" class="button">COMO LLEGAR</a>
+    </div>
+    <div class="divider"> </div>
+    <div class="container3">
+        <div class="goldLeters goldLetersPhotos">SIEMPRE JUNTOS</div>
+        <section class="photoContainer">
+            <a href="#uno" class="imagen-zoom img" onclick="onClickPhoto('uno')">
+                <img class="dimensiones" src="./img/rio1.jpg">
+            </a>
+            <a href="#dos" class="imagen-zoom img" onclick="onClickPhoto('dos')">
+                <img class="dimensiones" src="./img/rio2.jpg">
+            </a>
+            <a href="#tres" class="imagen-zoom img" onclick="onClickPhoto('tres')">
+                <img class="dimensiones" src="./img/rio3.jpg">
+            </a>
+            <a href="#cuatro" class="imagen-zoom img" onclick="onClickPhoto('cuatro')">
+                <img class="dimensiones" src="./img/rio4.jpg">
+            </a>
+            <a href="#cinco" class="imagen-zoom img" onclick="onClickPhoto('cinco')">
+                <img class="dimensiones" src="./img/rio5.jpg">
+            </a>
+            <a href="#seis" class="imagen-zoom img" onclick="onClickPhoto('seis')">
+                <img class="dimensiones" src="./img/rio6.jpg">
+            </a>
+            <a href="#siete" class="imagen-zoom img" onclick="onClickPhoto('siete')">
+                <img class="dimensiones" src="./img/rio7.jpg">
+            </a>
+            <a href="#ocho" class="imagen-zoom img" onclick="onClickPhoto('ocho')">
+                <img class="dimensiones" src="./img/rio8.jpg">
+            </a>
+        </section>
+        <article class="light-box" id="uno">
+            <a href="#ocho" class="next" onclick="onClosePhoto('uno'); onClickPhoto('ocho')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio1.jpg">
+            <a href="#dos" class="next" onclick="onClosePhoto('uno'); onClickPhoto('dos')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('uno')">X</a>
+        </article>
+        <article class="light-box" id="dos">
+            <a href="#uno" class="next" onclick="onClosePhoto('dos'); onClickPhoto('uno')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio2.jpg">
+            <a href="#tres" class="next" onclick="onClosePhoto('dos'); onClickPhoto('tres')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('dos')">X</a>
+        </article>
+        <article class="light-box" id="tres">
+            <a href="#dos" class="next" onclick="onClosePhoto('tres'); onClickPhoto('dos')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio3.jpg">
+            <a href="#cuatro" class="next" onclick="onClosePhoto('tres'); onClickPhoto('cuatro')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('tres')">X</a>
+        </article>
+        <article class="light-box" id="cuatro">
+            <a href="#tres" class="next" onclick="onClosePhoto('cuatro'); onClickPhoto('tres')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio4.jpg">
+            <a href="#cinco" class="next" onclick="onClosePhoto('cuatro'); onClickPhoto('cinco')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('cuatro')">X</a>
+        </article>
+        <article class="light-box" id="cinco">
+            <a href="#cuatro" class="next" onclick="onClosePhoto('cinco'); onClickPhoto('cuatro')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio5.jpg">
+            <a href="#seis" class="next" onclick="onClosePhoto('cinco'); onClickPhoto('seis')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('cinco')">X</a>
+        </article>
+        <article class="light-box" id="seis">
+            <a href="#cinco" class="next" onclick="onClosePhoto('seis'); onClickPhoto('cinco')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio6.jpg">
+            <a href="#siete" class="next" onclick="onClosePhoto('seis'); onClickPhoto('siete')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('seis')">X</a>
+        </article>
+        <article class="light-box" id="siete">
+            <a href="#seis" class="next" onclick="onClosePhoto('siete'); onClickPhoto('seis')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio7.jpg">
+            <a href="#ocho" class="next"  onclick="onClosePhoto('siete'); onClickPhoto('ocho')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('siete')">X</a>
+        </article>
+        <article class="light-box" id="ocho">
+            <a href="#siete" class="next" onclick="onClosePhoto('ocho'); onClickPhoto('siete')"><img src="./logos/fechaizquierda.png"></a>
+            <img src="./img/rio8.jpg">
+            <a href="#uno" class="next" onclick="onClosePhoto('ocho'); onClickPhoto('uno')"><img src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('ocho')">X</a>
+        </article>
+    </div>
+    <div class="gradient gradientCbu">
+        <div class="container4">
+            <div>
+                <img src="./logos/regalo.png" class="regalo">
+            </div>
+            <p class="paragraph paragGift">
+                Si deseas realizarnos un regalo, puedes colaborar con nuestra Luna de Miel...
+            </p>
+        </div>
+        <div>
+            <button class="show-modal" onclick="openModal()">VER CBU</button>
+        </div>
+        <div class="modal" id="modalAdd">
+            <div class="modal-container">
+                <div class="close-modal" onclick="closeModal()">X</div>
+                <h2>DATOS BANCA./img/rioS</h2>
+                <article class="letersModal">
+                    Skrill:<br>
+                    jmpy777@yahoo.es<br>
+                    +54 911 64792373<br><br>
+                    Argentina:<br>
+                    Banco Ciudad<br>
+                    N° cuenta:000406300050618378<br>
+                    CBU:0290063610000506183789<br>
+                    DNI: 95.538.478<br>
+                    Alias:BODA.GENEYJUAN<br>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="container5">
+        <div class="goldLeters goldLetersConf">CONFIRMANOS TU ASISTENCIA</div>
+        <p class="paragraph paragraphConf">Esperamos que seas parte de nuestra celebración. ¡Confirmanos tu asistencia!
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkZ5pqPVpZ-F6OATZ4KislqEYieILRI8mMdka724SkaSl_Gg/viewform?usp=sf_link"
+            target="_blank" class="button buttonConf">CONFIRMAR ASISTENCIA</a>
+    </div>
+    <div class="parallax image2">
+        <div class="container">
+            <h4 class="whiteTitle">#BODAGENEYJUAN</h4>
+            <p class="whiteLeters letersIg">Ya puedes etiquetarnos en Instagram con nuestro hashtags en tus fotos o
+                videos.</p>
+            <a href="https://www.instagram.com/explore/tags/bodageneyjuan/" target="_blank"
+                class="whiteButton buttonIg">VER FOTOS EN IG</a>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="goldLeters goldLetersConf">¿QUE CANCIONES NO PUEDEN FALTAR?</div>
+        <p class="paragraph paragraphConf">Ayudanos sugiriendo las canciones que no pueden faltar</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLFKB2aCjOexsxYaz-4RW1bVfGC6B27fAeWDUkw6lJ-qO0YQ/viewform?usp=sf_link"
+            target="_blank" class="button buttonSong">SUGERIR CANCIONES</a>
+    </div>
+    <div class="gradient gradientEnd">
+        <span class="smallWhiteLeters">¡Gracias por acompañarnos en este momento tan importante!</span>
+    </div>
+    <script src="https://kit.fontawesome.com/4b5c5775f3.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
