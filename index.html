@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
@@ -86,51 +86,51 @@
             </a>
         </section>
         <article class="light-box" id="uno">
-            <a href="#ocho" class="next" onclick="onClosePhoto('uno'); onClickPhoto('ocho')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#ocho" class="direction-left" onclick="onClosePhoto('uno'); onClickPhoto('ocho')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio1.jpg">
-            <a href="#dos" class="next" onclick="onClosePhoto('uno'); onClickPhoto('dos')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#dos" class="direction-right" onclick="onClosePhoto('uno'); onClickPhoto('dos')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('uno')">X</a>
         </article>
         <article class="light-box" id="dos">
-            <a href="#uno" class="next" onclick="onClosePhoto('dos'); onClickPhoto('uno')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#uno" class="direction-left" onclick="onClosePhoto('dos'); onClickPhoto('uno')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio2.jpg">
-            <a href="#tres" class="next" onclick="onClosePhoto('dos'); onClickPhoto('tres')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#tres" class="direction-right" onclick="onClosePhoto('dos'); onClickPhoto('tres')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('dos')">X</a>
         </article>
         <article class="light-box" id="tres">
-            <a href="#dos" class="next" onclick="onClosePhoto('tres'); onClickPhoto('dos')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#dos" class="direction-left" onclick="onClosePhoto('tres'); onClickPhoto('dos')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio3.jpg">
-            <a href="#cuatro" class="next" onclick="onClosePhoto('tres'); onClickPhoto('cuatro')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#cuatro" class="direction-right" onclick="onClosePhoto('tres'); onClickPhoto('cuatro')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('tres')">X</a>
         </article>
         <article class="light-box" id="cuatro">
-            <a href="#tres" class="next" onclick="onClosePhoto('cuatro'); onClickPhoto('tres')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#tres" class="direction-left" onclick="onClosePhoto('cuatro'); onClickPhoto('tres')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio4.jpg">
-            <a href="#cinco" class="next" onclick="onClosePhoto('cuatro'); onClickPhoto('cinco')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#cinco" class="direction-right" onclick="onClosePhoto('cuatro'); onClickPhoto('cinco')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('cuatro')">X</a>
         </article>
         <article class="light-box" id="cinco">
-            <a href="#cuatro" class="next" onclick="onClosePhoto('cinco'); onClickPhoto('cuatro')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#cuatro" class="direction-left" onclick="onClosePhoto('cinco'); onClickPhoto('cuatro')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio5.jpg">
-            <a href="#seis" class="next" onclick="onClosePhoto('cinco'); onClickPhoto('seis')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#seis" class="direction-right" onclick="onClosePhoto('cinco'); onClickPhoto('seis')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('cinco')">X</a>
         </article>
         <article class="light-box" id="seis">
-            <a href="#cinco" class="next" onclick="onClosePhoto('seis'); onClickPhoto('cinco')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#cinco" class="direction-left" onclick="onClosePhoto('seis'); onClickPhoto('cinco')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio6.jpg">
-            <a href="#siete" class="next" onclick="onClosePhoto('seis'); onClickPhoto('siete')"><img src="./logos/flechaderecha.png"></a>
-            <a href="" class="close" onclick="onClosePhoto('seis')">X</a>
+            <a href="#seis" class="direction-right" onclick="onClosePhoto('seis'); onClickPhoto('siete')"><img class="next" src="./logos/flechaderecha.png"></a>
+            <a href="" class="close" onclick="onClosePhoto('cinco')">X</a>
         </article>
         <article class="light-box" id="siete">
-            <a href="#seis" class="next" onclick="onClosePhoto('siete'); onClickPhoto('seis')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#seis" class="direction-left" onclick="onClosePhoto('siete'); onClickPhoto('seis')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio7.jpg">
-            <a href="#ocho" class="next"  onclick="onClosePhoto('siete'); onClickPhoto('ocho')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#ocho" class="direction-right" onclick="onClosePhoto('siete'); onClickPhoto('ocho')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('siete')">X</a>
         </article>
         <article class="light-box" id="ocho">
-            <a href="#siete" class="next" onclick="onClosePhoto('ocho'); onClickPhoto('siete')"><img src="./logos/fechaizquierda.png"></a>
+            <a href="#siete" class="direction-left" onclick="onClosePhoto('ocho'); onClickPhoto('siete')"><img class="next" src="./logos/flechaizquierda.png"></a>
             <img src="./img/rio8.jpg">
-            <a href="#uno" class="next" onclick="onClosePhoto('ocho'); onClickPhoto('uno')"><img src="./logos/flechaderecha.png"></a>
+            <a href="#uno" class="direction-right" onclick="onClosePhoto('ocho'); onClickPhoto('uno')"><img class="next" src="./logos/flechaderecha.png"></a>
             <a href="" class="close" onclick="onClosePhoto('ocho')">X</a>
         </article>
     </div>
@@ -183,7 +183,7 @@
     </div>
     <div class="container6">
         <div class="goldLeters goldLetersConf">¿QUE CANCIONES NO PUEDEN FALTAR?</div>
-        <p class="paragraph paragraphConf">Ayudanos sugiriendo las canciones que no pueden faltar</p>
+        <p class="paragraph paragraphSongs">Ayudanos sugiriendo las canciones que no pueden faltar</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLFKB2aCjOexsxYaz-4RW1bVfGC6B27fAeWDUkw6lJ-qO0YQ/viewform?usp=sf_link"
             target="_blank" class="button buttonSong">SUGERIR CANCIONES</a>
     </div>
