@@ -1,0 +1,612 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Molengo', sans-serif;
+}
+
+/*Imagen de corona con efecto parallax para el fondo*/
+
+.parallax {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:165%;
+    background-attachment: fixed;
+
+}
+
+.parallax.image1 {
+    background-image: url("./logos/corona2.png");
+    height: 100vh;
+    position: relative;
+}
+
+
+/*Portada de la invitacion, incluye título, subtítulo, scroll de flecha e imagenes de hojas*/
+/*Contenedor 1*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Titulo principal Gene & Juan*/
+.title {
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Montez', 'cursive';
+    color: #966D39;
+    font-size: 70px;
+    font-weight: 400;
+    position: absolute;
+    top: 45%;
+    display: table;
+    
+}
+
+
+/*Subtitulo Nos casamos*/
+.subTitle {
+    margin: 0px auto;
+    text-align: center;
+    color: #966D39;
+    font-size: 22px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 58%;
+}
+
+/*Flecha con efecto scroll desintegrandose*/
+.arrowScroll {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrowScroll span {
+    display :block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #b19359;
+    border-right: 5px solid #b19359;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2){
+    animation-delay: -.2s;
+}
+.arrow span:nth-child(2){
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);   
+    }
+    50% {
+        opacity: 1;   
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);   
+    }
+}
+
+
+/*Primer divisor fondo verde con gradiente radial*/
+.gradient {
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background-image: radial-gradient(#84BA8D, #2F643A);
+}
+
+/*Letras blancas para encabezados*/
+.whiteLeters {
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*Invitación a la celebración incluye copas, imagen de hojas, título y parrafo*/
+/*Contenedor2*/
+.container2 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+/*Racimo de hojas*/
+.cluster1 {
+    height: 240px;
+    width: 140px;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    transform: translateY(-7%);
+}
+
+/*Copas*/
+.glasses {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8%);
+}
+
+/*Titulos Dorados*/
+.goldLeters {
+    margin:20px;
+    text-align: center;
+    color: #966D39;
+    font-size: 30px;
+    position: absolute;
+    top: 22%;
+}
+
+/*Escritos*/
+.paragraph {
+    width: 240px;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top:34%;
+
+}
+
+/*Boton verde*/
+.button {
+    padding: 10px;
+    width: 240px;
+    background-color:#518354;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    transform: translateY(-5%);
+
+}
+
+/*Hover del boton verde*/
+.button:hover {
+    padding: 10px;
+    width: 230px;
+    background-color:white;
+    border-radius: 25px;
+    border: 2px solid #518354;
+    color: #518354;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    transform: translateY(-5%);
+}
+
+.divider {
+    background-color: #C3B68D;
+    height: 3px;
+    width: 100%;
+    position: relative;
+}
+
+/*Espacio para compartir una sesión de fotos en la costa del río de la plata*/
+/*Contenedor 3*/
+.container3 {
+    display: flex;
+    justify-content: center;
+    height: 140vh; 
+    width: 100%;
+    position: relative;
+
+}
+
+/*Ajustando medidas para titulo dorado*/
+.goldLetersPhotos {
+    position: absolute;
+    top: 25px;
+}
+
+/*Contenedor de tarjetas de fotos*/
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+    height: 121vh;
+    margin:auto;
+    margin-top: 110px;
+    flex-wrap: wrap;
+}
+
+.imagen-zoom img {
+    transition:all 0.5s; 
+    -moz-transition:all 0.5s; 
+    -webkit-transition:all 0.5s;
+    border-radius: 10px; 
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgb(143, 143, 143);
+}
+/* .imagen-zoom img:hover{
+    transform:scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform:scale(1.2);
+    border-radius: 10px;
+    margin: 10px;
+} */
+
+.dimensiones {
+    height: 180px;
+    width: 130px;
+    object-fit: cover;
+}
+
+/*Tarjetas contenedoras de fotos*/
+.cards {
+    width: 240px;
+    height: 300px;
+    margin: 2px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+}
+
+.cards:hover {
+    width: 275px;
+    height: 345px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+}
+
+.light-box {
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img {
+    width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.direction-left {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%) translateX(-15px);
+}
+
+.direction-right {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%) translateX(-35px);
+}
+
+.next {
+    display:inline;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px;
+}
+
+/*Seccion regalo*/
+/*contenedor 4*/
+.container4 {
+    display: flex;
+    justify-content: center;
+    height: 40vh; 
+    position: relative;
+}
+
+.gradientCbu {
+    height: 40vh;
+    position: relative;
+}
+
+.regalo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15%);
+}
+.paragGift {
+    width: 290px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+}
+
+.buttonCbu {
+    bottom: 5%;
+    transform: translateY(-5%);
+    position: absolute;
+}
+
+.buttonCbu:hover {
+    bottom: 5%;
+    transform: translateY(-5%);
+    background-color: #70A57d;
+    position: absolute;
+}
+
+.show-modal {
+    background: white;
+    border-radius: 25px;
+    border-style: none;
+    padding: 10px;
+    width: 240px;
+    color: #518354;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateY(-8%) translateX(-50%);
+    text-decoration: none;
+}
+
+.show-modal:hover {
+    cursor:pointer;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateY(-8%) translateX(-50%);
+}
+
+.modal {
+    display: none;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-container {
+    background: white;
+    min-width: 290px;
+    min-height: 290px;
+    position: absolute;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    
+} 
+
+h2 {
+    text-align: center;
+    color: #518354;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.letersModal {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.close-modal {
+    color: rgba(0,0,0, 0.85);
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+
+/*Confirmacion de asistencia*/
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50vh;
+}
+
+.goldLetersConf {
+    top:5%;
+    width: 290px;
+}
+
+.paragraphConf {
+    top: 38%;
+}
+
+.buttonConf {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+
+.buttonConf:hover {
+    position: absolute;
+    bottom: 13%;
+    transform: translateY(-13%);
+}
+
+/*Seccion de fotos de instagram*/
+
+.parallax {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+.parallax.image2 {
+    background-size:cover;
+    background-image: url("./img/final5.png");
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.whiteTitle {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    top: 22%;
+    left: 50%;
+    transform: translateY(-22%) translateX(-50%);
+    
+}
+
+.whiteButton {
+    padding: 10px;
+    width: 240px;
+    background-color:white;
+    border-radius: 25px;
+    color: #518354;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+
+.whiteButton:hover {
+    padding: 10px;
+    width: 240px;
+    background-color:transparent;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+
+.buttonIg {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+.buttonIg:hover{
+    bottom: 10%;
+    transform: translateY(-10%);
+}
+
+.letersIg {
+    font-size: 22px;
+    width: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.smallWhiteLeters {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*hasta aqui codigo bien*/
+/*Seccion de recomendaciones de canciones*/
+.container6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 45vh;
+}
+
+.buttonSong {
+    position: absolute;
+    bottom: 10%;
+}
+
+.buttonSong:hover {
+    position: absolute;
+    bottom: 10%;
+}
+
+.paragraphSongs {
+    top:54%;
+    transform: translateY(-54%);
+}
+
+/*Gradiente final*/
+.gradientEnd {
+    position: relative;
+    bottom: 0%;
+}
+
+.smallWhiteLetersEnd {
+    color: white;
+    font-size: 22px;
+    width: 290px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
