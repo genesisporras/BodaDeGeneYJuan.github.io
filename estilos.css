@@ -12,23 +12,6 @@
     position: relative;
 }
 
-/*Imagen de corona con efecto parallax para el fondo*/
-
-/* .parallax {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size:400px;
-    background-attachment: fixed;
-
-}
-
-.parallax.image1 {
-    background-image: url("./logos/corona2.png");
-    height: 100vh;
-    position: relative;
-} */
-
-
 /*Portada de la invitacion, incluye título, subtítulo, scroll de flecha e imagenes de hojas*/
 /*Contenedor 1*/
 .container {
@@ -47,8 +30,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    display: table;
-    
 }
 
 
@@ -61,6 +42,7 @@
     letter-spacing: 5px;
     position: absolute;
     top: 58%;
+    transform: translateY(-58%);
 }
 
 /*Flecha con efecto scroll desintegrandose*/
@@ -80,6 +62,7 @@
     transform: rotate(45deg);
     margin: -10px;
     animation: scroll 2s infinite;
+    z-index: 100;
 }
 
 .arrow span:nth-child(2){
@@ -235,7 +218,7 @@
     display: flex;
     justify-content: center;
     width: 310px;
-    height: 100vh;
+    height: 680px;
     margin:auto;
     margin-top: 110px;
     flex-wrap: wrap;
@@ -489,8 +472,8 @@ h2 {
 
 .buttonConf:hover {
     position: absolute;
-    bottom: 13%;
-    transform: translateY(-13%);
+    bottom: 10%;
+    transform: translateY(-10%);
 }
 
 /*Seccion de fotos de instagram*/
@@ -619,3 +602,353 @@ h2 {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+
+/* Para 480px */  
+@media screen and (min-width: 480px) and (max-width: 768px){  
+/*Imagen de corona con efecto parallax para el fondo*/
+
+.parallax1 {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-attachment: fixed;
+
+}
+
+.parallax.image1 {
+    background-image: url("./logos/corona.png");
+    height: 100vh;
+    position: relative;
+} 
+
+.coverPage {
+    background-image: url("./logos/corona.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-size:650px;
+    position: relative;
+}
+
+.title {
+    top: 45%;
+    transform: translateY(-45%);
+}
+
+
+/*Subtitulo Nos casamos*/
+.subTitle {
+    top: 53%;
+    transform: translateY(-53%);
+}
+
+
+.container2 {
+    height: 600px;
+}
+
+
+/*Escritos*/
+.paragraph {
+    top: 40%;
+    width: 400px;
+}
+
+.button {
+    bottom: 8%;
+    transform: translateY(-8%);
+
+}
+
+/*Hover del boton verde*/
+.button:hover {
+    bottom: 8%;
+    transform: translateY(-8%);
+}
+
+
+#ultima{
+    display: none;
+}
+#penultima{
+    display: none;
+}
+
+.container3 {
+    height: 550px; 
+}
+
+/*Ajustando medidas para titulo dorado*/
+.goldLetersPhotos {
+    position: absolute;
+    top: 25px;
+}
+
+/*Contenedor de tarjetas de fotos*/
+.photoContainer {
+    width: 480px;
+    height: 400px;
+}
+
+.dimensiones {
+    width: 134px;
+}
+
+.light-box img {
+    width: 480px;
+    max-height: 580px;
+    object-fit: cover;
+}
+
+.paragGift {
+    width: 470px;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+}
+
+.goldLetersConf {
+    top:8%;
+    width: 290px;
+}
+
+.paragraphConf {
+    top: 42%;
+    width: 400px;
+}
+
+.buttonConf {
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+
+.buttonConf:hover {
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+
+.whiteButton {
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+
+.whiteButton:hover {
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+
+.buttonIg {
+    position: absolute;
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+.buttonIg:hover{
+    bottom: 15%;
+    transform: translateY(-15%);
+}
+
+.letersIg {
+    width: 400px;
+}
+
+.buttonSong {
+    bottom: 15%;
+}
+
+.buttonSong:hover {
+    bottom: 15%;
+}
+
+.paragraphSongs {
+    top:54%;
+    transform: translateY(-54%);
+}
+
+/*Gradiente final*/
+.gradientEnd {
+    position: relative;
+    bottom: 0%;
+}
+
+.smallWhiteLetersEnd {
+    width: 470px;
+}
+
+}
+
+
+/* Para 480px */  
+@media screen and (min-width: 769px) and (max-width: 1200px){  
+    /*Imagen de corona con efecto parallax para el fondo*/
+    
+    .parallax1 {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 700px;
+        background-attachment: fixed;
+    
+    }
+    
+    .parallax.image1 {
+        background-image: url("./logos/corona.png");
+        height: 100vh;
+        position: relative;
+    } 
+    
+    .coverPage {
+        background-image: url("./logos/corona.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: 50% 50%;
+        background-size: 900px;
+        position: relative;
+    }
+    
+    .title {
+        top: 45%;
+        transform: translateY(-45%);
+        font-size: 80px;
+    }
+    
+    
+    /*Subtitulo Nos casamos*/
+    .subTitle {
+        top: 53%;
+        transform: translateY(-53%);
+        font-size: 30px;
+    }
+    
+    
+    .container2 {
+        height: 600px;
+    }
+    
+    
+    /*Escritos*/
+    .paragraph {
+        top: 40%;
+        width: 400px;
+    }
+    
+    .button {
+        bottom: 8%;
+        transform: translateY(-8%);
+    
+    }
+    
+    /*Hover del boton verde*/
+    .button:hover {
+        bottom: 8%;
+        transform: translateY(-8%);
+    }
+    
+    
+    #ultima{
+        display: none;
+    }
+    #penultima{
+        display: none;
+    }
+    
+    .container3 {
+        height: 550px; 
+    }
+    
+    /*Ajustando medidas para titulo dorado*/
+    .goldLetersPhotos {
+        position: absolute;
+        top: 25px;
+    }
+    
+    /*Contenedor de tarjetas de fotos*/
+    .photoContainer {
+        width: 480px;
+        height: 400px;
+    }
+    
+    .dimensiones {
+        width: 134px;
+    }
+    
+    .light-box img {
+        width: 480px;
+        max-height: 580px;
+        object-fit: cover;
+    }
+    
+    .paragGift {
+        width: 470px;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-55%);
+    }
+    
+    .goldLetersConf {
+        top:8%;
+        width: 290px;
+    }
+    
+    .paragraphConf {
+        top: 42%;
+        width: 400px;
+    }
+    
+    .buttonConf {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .buttonConf:hover {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .whiteButton {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .whiteButton:hover {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .buttonIg {
+        position: absolute;
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    .buttonIg:hover{
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .letersIg {
+        width: 400px;
+    }
+    
+    .buttonSong {
+        bottom: 15%;
+    }
+    
+    .buttonSong:hover {
+        bottom: 15%;
+    }
+    
+    .paragraphSongs {
+        top:54%;
+        transform: translateY(-54%);
+    }
+    
+    /*Gradiente final*/
+    .gradientEnd {
+        position: relative;
+        bottom: 0%;
+    }
+    
+    .smallWhiteLetersEnd {
+        width: 470px;
+    }
+    
+    }
