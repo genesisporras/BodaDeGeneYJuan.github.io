@@ -3,13 +3,21 @@
     margin: 0;
     font-family: 'Molengo', sans-serif;
 }
+.coverPage {
+    background-image: url("./logos/corona2.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-size:550px;
+    position: relative;
+}
 
 /*Imagen de corona con efecto parallax para el fondo*/
 
-.parallax {
+/* .parallax {
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size:165%;
+    background-size:400px;
     background-attachment: fixed;
 
 }
@@ -18,7 +26,7 @@
     background-image: url("./logos/corona2.png");
     height: 100vh;
     position: relative;
-}
+} */
 
 
 /*Portada de la invitacion, incluye título, subtítulo, scroll de flecha e imagenes de hojas*/
@@ -34,10 +42,11 @@
     text-align: center;
     font-family: 'Montez', 'cursive';
     color: #966D39;
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 400;
     position: absolute;
-    top: 45%;
+    top: 50%;
+    transform: translateY(-50%);
     display: table;
     
 }
@@ -48,7 +57,7 @@
     margin: 0px auto;
     text-align: center;
     color: #966D39;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 5px;
     position: absolute;
     top: 58%;
@@ -97,7 +106,7 @@
 
 /*Primer divisor fondo verde con gradiente radial*/
 .gradient {
-    height: 60px;
+    height: 80px;
     width: 100%;
     position: relative;
     background-image: radial-gradient(#84BA8D, #2F643A);
@@ -121,7 +130,7 @@
 .container2 {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 700px;
     position: relative;
 }
 
@@ -209,7 +218,7 @@
 .container3 {
     display: flex;
     justify-content: center;
-    height: 140vh; 
+    height: 950px; 
     width: 100%;
     position: relative;
 
@@ -226,7 +235,7 @@
     display: flex;
     justify-content: center;
     width: 310px;
-    height: 121vh;
+    height: 100vh;
     margin:auto;
     margin-top: 110px;
     flex-wrap: wrap;
@@ -249,8 +258,8 @@
 } */
 
 .dimensiones {
-    height: 180px;
     width: 130px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -307,16 +316,16 @@
 
 .direction-left {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 15px;
-    transform: translateY(-50%) translateX(-15px);
+    transform: translateY(-45%) translateX(-15px);
 }
 
 .direction-right {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 35px;
-    transform: translateY(-50%) translateX(-35px);
+    transform: translateY(-45%) translateX(-35px);
 }
 
 .next {
@@ -335,17 +344,17 @@
 
 /*Seccion regalo*/
 /*contenedor 4*/
+.gradientCbu {
+    height: 270px;
+    position: relative;
+}
 .container4 {
     display: flex;
     justify-content: center;
-    height: 40vh; 
+    height: 270px; 
     position: relative;
 }
 
-.gradientCbu {
-    height: 40vh;
-    position: relative;
-}
 
 .regalo {
     width: 60px;
@@ -460,7 +469,7 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 50vh;
+    height: 330px;
 }
 
 .goldLetersConf {
@@ -497,7 +506,7 @@ h2 {
 .parallax.image2 {
     background-size:cover;
     background-image: url("./img/final5.png");
-    height: 50vh;
+    height: 350px;
     width: 100%;
     position: relative;
 }
@@ -576,7 +585,7 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 45vh;
+    height: 310px;
 }
 
 .buttonSong {
