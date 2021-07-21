@@ -613,7 +613,6 @@ h2 {
     background-repeat: no-repeat;
     background-size: 700px;
     background-attachment: fixed;
-
 }
 
 .parallax.image1 {
@@ -648,6 +647,9 @@ h2 {
     height: 600px;
 }
 
+.goldLeters {
+    top: 25%;
+}
 
 /*Escritos*/
 .paragraph {
@@ -696,8 +698,8 @@ h2 {
 }
 
 .light-box img {
-    width: 480px;
-    max-height: 580px;
+    width: 350px;
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -806,53 +808,60 @@ h2 {
     }
     
     .title {
-        top: 45%;
-        transform: translateY(-45%);
-        font-size: 80px;
+        top: 48%;
+        transform: translateY(-48%);
+        font-size: 100px;
     }
     
     
     /*Subtitulo Nos casamos*/
     .subTitle {
-        top: 53%;
-        transform: translateY(-53%);
+        top: 58%;
+        transform: translateY(-58%);
         font-size: 30px;
     }
     
-    
+    .whiteLeters {
+        color: white;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
     .container2 {
         height: 600px;
     }
     
+    .goldLeters {
+        top: 25%;
+    }
     
     /*Escritos*/
     .paragraph {
-        top: 40%;
-        width: 400px;
+        top: 43%;
+        font-size: 24px;
+        width: 550px;
     }
     
     .button {
-        bottom: 8%;
-        transform: translateY(-8%);
+        bottom: 10%;
+        transform: translateY(-10%);
     
     }
     
     /*Hover del boton verde*/
     .button:hover {
-        bottom: 8%;
-        transform: translateY(-8%);
+        bottom: 10%;
+        transform: translateY(-10%);
     }
     
-    
-    #ultima{
-        display: none;
-    }
-    #penultima{
-        display: none;
-    }
-    
+
     .container3 {
-        height: 550px; 
+        height: 580px; 
     }
     
     /*Ajustando medidas para titulo dorado*/
@@ -863,27 +872,71 @@ h2 {
     
     /*Contenedor de tarjetas de fotos*/
     .photoContainer {
-        width: 480px;
+        width: 760px;
         height: 400px;
     }
     
     .dimensiones {
-        width: 134px;
+        width: 160px;
+        height: 200px;
     }
     
     .light-box img {
-        width: 480px;
-        max-height: 580px;
+        width: 450px;
+        max-height: 550px;
         object-fit: cover;
     }
+
+    .imagen-zoom img:hover{
+    transform:scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform:scale(1.2);
+    border-radius: 10px;
+    margin: 10px;
+    } 
+
     
     .paragGift {
-        width: 470px;
+        width: 550px;
         top: 55%;
         left: 50%;
+        font-size: 24px;
         transform: translateX(-50%) translateY(-55%);
     }
     
+    .modal {
+        display: none;
+        background: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .modal-container {
+        min-width: 400px;
+        min-height: 400px;
+    } 
+    
+    h2 {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    
+    .letersModal {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    
+    .close-modal {
+        top: 20px;
+        right: 20px;
+    } 
+
     .goldLetersConf {
         top:8%;
         width: 290px;
@@ -925,7 +978,7 @@ h2 {
     }
     
     .letersIg {
-        width: 400px;
+        width: 550px;
     }
     
     .buttonSong {
@@ -939,6 +992,7 @@ h2 {
     .paragraphSongs {
         top:54%;
         transform: translateY(-54%);
+        width: 550px;
     }
     
     /*Gradiente final*/
@@ -948,7 +1002,236 @@ h2 {
     }
     
     .smallWhiteLetersEnd {
-        width: 470px;
+        width: 760px;
+        font-size: 26px;
+    }
+    
+    }
+
+    /* Para 480px */  
+@media screen and (min-width: 769px) and (max-width: 1200px){  
+    /*Imagen de corona con efecto parallax para el fondo*/
+    
+    .parallax1 {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 700px;
+        background-attachment: fixed;
+    
+    }
+    
+    .parallax.image1 {
+        background-image: url("./logos/corona.png");
+        height: 100vh;
+        position: relative;
+    } 
+    
+    .coverPage {
+        background-image: url("./logos/corona.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: 50% 50%;
+        background-size: 900px;
+        position: relative;
+    }
+    
+    .title {
+        top: 48%;
+        transform: translateY(-48%);
+        font-size: 100px;
+    }
+    
+    
+    /*Subtitulo Nos casamos*/
+    .subTitle {
+        top: 58%;
+        transform: translateY(-58%);
+        font-size: 30px;
+    }
+    
+    .whiteLeters {
+        color: white;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .container2 {
+        height: 600px;
+    }
+    
+    .goldLeters {
+        top: 25%;
+    }
+    
+    /*Escritos*/
+    .paragraph {
+        top: 43%;
+        font-size: 24px;
+        width: 550px;
+    }
+    
+    .button {
+        bottom: 10%;
+        transform: translateY(-10%);
+    
+    }
+    
+    /*Hover del boton verde*/
+    .button:hover {
+        bottom: 10%;
+        transform: translateY(-10%);
+    }
+    
+
+    .container3 {
+        height: 580px; 
+    }
+    
+    /*Ajustando medidas para titulo dorado*/
+    .goldLetersPhotos {
+        position: absolute;
+        top: 25px;
+    }
+    
+    /*Contenedor de tarjetas de fotos*/
+    .photoContainer {
+        width: 760px;
+        height: 400px;
+    }
+    
+    .dimensiones {
+        width: 160px;
+        height: 200px;
+    }
+    
+    .light-box img {
+        width: 450px;
+        max-height: 550px;
+        object-fit: cover;
+    }
+
+    .imagen-zoom img:hover{
+    transform:scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform:scale(1.2);
+    border-radius: 10px;
+    margin: 10px;
+    } 
+
+    
+    .paragGift {
+        width: 550px;
+        top: 55%;
+        left: 50%;
+        font-size: 24px;
+        transform: translateX(-50%) translateY(-55%);
+    }
+    
+    .modal {
+        display: none;
+        background: rgba(0,0,0, 0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .modal-container {
+        min-width: 400px;
+        min-height: 400px;
+    } 
+    
+    h2 {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    
+    .letersModal {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    
+    .close-modal {
+        top: 20px;
+        right: 20px;
+    } 
+
+    .goldLetersConf {
+        top:8%;
+        width: 290px;
+    }
+    
+    .paragraphConf {
+        top: 42%;
+        width: 400px;
+    }
+    
+    .buttonConf {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .buttonConf:hover {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .whiteButton {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .whiteButton:hover {
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .buttonIg {
+        position: absolute;
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    .buttonIg:hover{
+        bottom: 15%;
+        transform: translateY(-15%);
+    }
+    
+    .letersIg {
+        width: 550px;
+    }
+    
+    .buttonSong {
+        bottom: 15%;
+    }
+    
+    .buttonSong:hover {
+        bottom: 15%;
+    }
+    
+    .paragraphSongs {
+        top:54%;
+        transform: translateY(-54%);
+        width: 550px;
+    }
+    
+    /*Gradiente final*/
+    .gradientEnd {
+        position: relative;
+        bottom: 0%;
+    }
+    
+    .smallWhiteLetersEnd {
+        width: 760px;
+        font-size: 26px;
     }
     
     }
